@@ -112,7 +112,7 @@ packages:
       name: build_runner
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.11.1"
+    version: "1.11.1+1"
   build_runner_core:
     dependency: transitive
     description:
@@ -496,20 +496,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.0"
-  flutter_document_picker:
-    dependency: "direct main"
-    description:
-      name: flutter_document_picker
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.0.1"
-  flutter_file_dialog:
-    dependency: "direct main"
-    description:
-      name: flutter_file_dialog
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
   flutter_google_places:
     dependency: "direct main"
     description:
@@ -543,6 +529,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.5.2"
+  flutter_native_admob:
+    dependency: "direct main"
+    description:
+      name: flutter_native_admob
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.0+3"
   flutter_native_image:
     dependency: "direct main"
     description:

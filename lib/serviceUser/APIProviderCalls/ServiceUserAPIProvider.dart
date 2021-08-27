@@ -34,8 +34,8 @@ import 'package:gps_massageapp/models/responseModels/serviceUser/searchModels/Se
 import 'package:gps_massageapp/models/responseModels/serviceUser/userDetails/GetTherapistDetails.dart';
 import 'package:gps_massageapp/models/responseModels/serviceUser/userDetails/GetUserDetails.dart';
 import 'package:gps_massageapp/routing/navigationRouter.dart';
-import 'package:gps_massageapp/models/responseModels/serviceUser/login/snsAndAppleResponse.dart';
 import 'package:http/http.dart' as http;
+import 'package:http/io_client.dart' as http;
 import 'package:intl/intl.dart';
 
 class ServiceUserAPIProvider {
@@ -399,12 +399,16 @@ class ServiceUserAPIProvider {
   static Future<GetUserDetailsByIdModel> getUserDetails(
       BuildContext context, String userID) async {
     try {
+      final ioClient = HttpClient();
+      ioClient.connectionTimeout = const Duration(seconds: 5);
+      final client = http.IOClient(ioClient);
+
       final url = HealingMatchConstants.GET_USER_DETAILS;
       Map<String, String> headers = {
         'Content-Type': 'application/json',
         'x-access-token': '${HealingMatchConstants.accessToken}'
       };
-      final response = await http.post(url,
+      final response = await client.post(url,
           headers: headers,
           body: json.encode({
             "user_id": userID,

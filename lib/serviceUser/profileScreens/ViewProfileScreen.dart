@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:cached_network_image/cached_network_image.dart';
@@ -614,6 +615,7 @@ class _ViewUserProfileState extends State<ViewUserProfile>
   }
 
   getUserProfileData() async {
+
     ProgressDialogBuilder.showOverlayLoader(context);
     try {
       var userListApiProvider = ServiceUserAPIProvider.getUserDetails(

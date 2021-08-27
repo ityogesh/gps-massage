@@ -110,8 +110,6 @@ dependencies:
   json_annotation: any
   flutter_datetime_picker: any
 
-  #keyboard_visibility: 4.0.3
-
 
   video_player: ^0.10.12
   keyboard_actions: ^3.3.1+1
@@ -124,10 +122,10 @@ dependencies:
   readmore: any #Gowtham Text ReadMore
   argon_buttons_flutter: any
   flutter_stripe_payment: any
-  flutter_document_picker: any
-  flutter_file_dialog: any
   flutter_webview_plugin: any
   translator: any
+  flutter_native_admob: ^2.1.0+3 # for Native ads display
+
 
 
 

@@ -7,6 +7,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe_payment/flutter_stripe_payment.dart';
 import 'package:gps_massageapp/constantUtils/colorConstants.dart';
+import 'package:gps_massageapp/constantUtils/helperClasses/progressDialogsHelper.dart';
 import 'package:gps_massageapp/customLibraryClasses/providerEventCalendar/src/event.dart';
 import 'package:gps_massageapp/models/responseModels/serviceProvider/ProviderDetailsResponseModel.dart';
 import 'package:gps_massageapp/models/responseModels/serviceProvider/loginResponseModel.dart'
@@ -20,7 +21,6 @@ import 'package:gps_massageapp/models/responseModels/serviceUser/userDetails/Get
 import 'package:gps_massageapp/routing/navigationRouter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
-import 'package:gps_massageapp/constantUtils/helperClasses/progressDialogsHelper.dart';
 
 enum MessageType {
   Text,
@@ -57,9 +57,9 @@ class HealingMatchConstants {
   static const String ON_PREMISE_USER_BASE_URL =
       // "http://103.92.19.158:9087/api"; //secondary backup IP
 
-        "http://106.51.49.160:9087/api"; // Development data URL
+      "http://106.51.49.160:9087/api"; // Development data URL
 
-    // "http://106.51.49.160:9094/api"; // Testing data URL
+  // "http://106.51.49.160:9094/api"; // Testing data URL
 
   // "http://103.92.19.158:9094/api"; //Temp URL
 
